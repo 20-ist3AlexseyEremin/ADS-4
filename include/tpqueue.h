@@ -11,7 +11,7 @@ class TPQueue {
                 int begin, end;
                 int count;
   public:
-                TPqueue(int = 100);
+                TPQueue(int = 100);
                 ~TPQueue();
 
         void push(const T &);
@@ -29,7 +29,7 @@ TPQueue<T>::TPQueue(int sizeQueue) :
         }
 
 template<typename T>
-TPqueue<T>::~TPQueue() {
+TPQueue<T>::~TPQueue() {
         delete [] arr;
         }
 
