@@ -45,7 +45,7 @@ void TPQueue<T>::push(const T & item) {
                 }
                 }
         } else {
-                arr[begin] = item;
+                arr[end] = item;
         }
                 end++;
                 count++;
