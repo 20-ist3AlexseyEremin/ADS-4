@@ -5,12 +5,12 @@
 
 template<typename T>
 class TPQueue {
-  private:
+ private:
                 T *arr;
                 int size;
                 int begin, end;
                 int count;
-  public:
+ public:
                 TPQueue(int = 100);
                 ~TPQueue();
 
