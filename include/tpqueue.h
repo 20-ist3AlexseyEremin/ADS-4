@@ -38,6 +38,7 @@ template<typename T>
 void TPQueue<T>::push(const T & item) {
         assert(count < size);
         if (end != 0) {
+        arr[end] = item;
                 for (int i = end -1; i >= begin; i--) {
                 if (item.prior > arr[i].prior) {
                         arr[i + 1] = arr[i];
@@ -45,7 +46,7 @@ void TPQueue<T>::push(const T & item) {
                 }
                 }
         } else {
-                arr[end] = item;
+                arr[begin] = item;
         }
                 end++;
                 count++;
